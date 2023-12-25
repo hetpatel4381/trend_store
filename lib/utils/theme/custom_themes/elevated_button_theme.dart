@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trend_store/utils/constants/colors.dart';
 
 // Custom class for Light & Dark ElevatedButton theme.
 class AppElevatedButtonTheme {
@@ -9,7 +10,7 @@ class AppElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.primary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
       side: const BorderSide(color: Colors.blue),
@@ -24,7 +25,7 @@ class AppElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.primary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
       side: const BorderSide(color: Colors.blue),

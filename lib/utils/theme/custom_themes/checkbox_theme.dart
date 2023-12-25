@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trend_store/utils/constants/colors.dart';
 
 // Custom class for Light & Dark Text theme.
 class AppCheckBoxTheme {
@@ -16,7 +17,7 @@ class AppCheckBoxTheme {
       }),
       fillColor: MaterialStateProperty.resolveWith((states) {
         if (states.contains(MaterialState.selected)) {
-          return Colors.blue;
+          return AppColors.primary;
         } else {
           return Colors.transparent;
         }

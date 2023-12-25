@@ -17,7 +17,9 @@ class OnBoardingSkip extends StatelessWidget {
         onPressed: () {
           OnBoardingController.instance.skipPage();
         },
-        child: Text("Skip", style: Theme.of(context).textTheme.bodyMedium,
+        child: Text(
+          "Skip",
+          style: Theme.of(context).textTheme.bodyMedium,
           textAlign: TextAlign.center,
         ),
       ),

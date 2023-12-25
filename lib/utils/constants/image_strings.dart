@@ -5,8 +5,8 @@ class AppImages {
   static const String lightAppLogo = 'assets/logos/trend-store-splash-logo-white.png';
 
   // -- Social Logos
-  static const String google = '';
-  static const String facebook = '';
+  static const String google = 'assets/images/google-logo.png';
+  static const String facebook = 'assets/images/facebook-logo.png';
 
   // -- OnBoarding Images
   static const String onBoardingImage1 = 'assets/images/on_boarding_images/sammy-line-searching.gif';
