@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:trend_store/utils/constants/colors.dart';
 import 'package:trend_store/utils/helpers/helper_functions.dart';
 
-class LoginFormDivider extends StatelessWidget {
-  const LoginFormDivider({super.key, required this.dividerText});
+class FormDivider extends StatelessWidget {
+  const FormDivider({super.key, required this.dividerText});
   final String dividerText;
 
   @override
@@ -21,8 +21,7 @@ class LoginFormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(dividerText,
-            style: Theme.of(context).textTheme.labelMedium),
+        Text(dividerText, style: Theme.of(context).textTheme.labelMedium),
         Flexible(
           child: Divider(
             color: dark ? AppColors.darkGrey : AppColors.grey,

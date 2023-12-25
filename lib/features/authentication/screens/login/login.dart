@@ -13,7 +13,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -27,7 +26,7 @@ class LoginScreen extends StatelessWidget {
               const LoginForm(),
 
               /// Divider
-              LoginFormDivider(dividerText: AppTexts.orSignInWith.capitalize!),
+              FormDivider(dividerText: AppTexts.orSignInWith.capitalize!),
               const SizedBox(height: AppSizes.spaceBtwSetions),
 
               /// Footer

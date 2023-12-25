@@ -35,7 +35,7 @@ class AppCheckBoxTheme {
       }),
       fillColor: MaterialStateProperty.resolveWith((states) {
         if (states.contains(MaterialState.selected)) {
-          return Colors.blue;
+          return AppColors.primary;
         } else {
           return Colors.transparent;
         }
