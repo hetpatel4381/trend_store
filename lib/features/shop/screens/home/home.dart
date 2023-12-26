@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:trend_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
-
+import 'package:trend_store/features/shop/screens/home/widgets/home_appbar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,7 +14,10 @@ class HomeScreen extends StatelessWidget {
           children: [
             HomePrimaryHeaderContainer(
               child: Column(
-                children: [],
+                children: [
+                  /// Custom AppBar
+                  HomeAppBar(),
+                ],
               ),
             ),
           ],
