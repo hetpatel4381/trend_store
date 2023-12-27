@@ -53,4 +53,16 @@ class AppTexts {
   static const String emailNotReceivedMessage = "Didn't get the email? Check your junk/span or resend it.";
   static const String yourAccountCreatedTitle = "Your account successfully created!";
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your  Account is Created, Unleash the Joy of Seamless Online Shopping!";
+
+  // -- Categories Text
+  static const String sportItems = 'Sport Items';
+  static const String tailoring = 'Tailoring';
+  static const String shoes = 'Shoes';
+  static const String cosmetics = 'Cosmetics';
+  static const String animal = 'Animal';
+  static const String toys = 'Toys';
+  static const String furniture = 'Furniture';
+  static const String jewelery = 'Jewelery';
+  static const String electronics = 'Electronics';
+  static const String dress = 'Dress';
 }

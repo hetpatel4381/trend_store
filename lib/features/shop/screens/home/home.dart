@@ -7,7 +7,9 @@ import 'package:trend_store/features/shop/screens/home/widgets/home_appbar.dart'
 import 'package:trend_store/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:trend_store/features/shop/screens/home/widgets/home_promo_slider.dart';
 import 'package:trend_store/utils/constants/colors.dart';
+import 'package:trend_store/utils/constants/image_strings.dart';
 import 'package:trend_store/utils/constants/sizes.dart';
+import 'package:trend_store/utils/constants/text_strings.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,7 +45,32 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(height: AppSizes.spaceBtnItems),
 
                         // Categories
-                        AppHomeCategories(),
+                        AppHomeCategories(
+                          categories: [
+                            AppImages.sportIcon,
+                            AppImages.clothIcon,
+                            AppImages.shoeIcon,
+                            AppImages.cosmeticsIcon,
+                            AppImages.animalIcon,
+                            AppImages.toyIcon,
+                            AppImages.furnitureIcon,
+                            AppImages.jeweleryIcon,
+                            AppImages.electronicsIcon,
+                            AppImages.dressIcon,
+                          ],
+                          title: [
+                            AppTexts.sportItems,
+                            AppTexts.tailoring,
+                            AppTexts.shoes,
+                            AppTexts.cosmetics,
+                            AppTexts.animal,
+                            AppTexts.toys,
+                            AppTexts.furniture,
+                            AppTexts.jewelery,
+                            AppTexts.electronics,
+                            AppTexts.dress,
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -55,9 +82,9 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(AppSizes.defaultSpace),
               child: AppPromoSlider(banners: [
-                'assets/images/banners/promo-banner1.jpeg',
-                'assets/images/banners/promo-banner2.jpeg',
-                'assets/images/banners/promo-banner3.jpeg',
+                AppImages.promoBanner1,
+                AppImages.promoBanner2,
+                AppImages.promoBanner3,
               ]),
             ),
           ],
