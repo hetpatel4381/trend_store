@@ -22,7 +22,6 @@ class AppProductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: (){},
       child: Container(
-        width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [AppShadowStyle.verticalProductShadow],
@@ -33,13 +32,15 @@ class AppProductCardVertical extends StatelessWidget {
           children: [
             // Thumbnail, wishlist and discount tag.
             AppCircularContainer(
-              height: 180,
-              padding: const EdgeInsets.all(AppSizes.sm),
+              height: 198,
+              padding: const EdgeInsets.all(AppSizes.xxs),
               backgroundColor: dark ? AppColors.dark : AppColors.light,
+              radius: 20,
               child: Stack(
                 children: [
                   // -- Thumbnail Image
                   const AppRoundedImage(
+                    height: 180,
                     imageUrl: AppImages.productImage1,
                     applyImageRadius: true,
                   ),
@@ -82,7 +83,7 @@ class AppProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const AppProductTitleText(
-                    title: "Red Nike Air Shoes",
+                    title: "Nike Air Shoes",
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSizes.spaceBtnItems / 2),

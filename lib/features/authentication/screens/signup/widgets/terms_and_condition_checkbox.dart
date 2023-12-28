@@ -18,8 +18,9 @@ class TermsAndConditionCheckBox extends StatelessWidget {
           child: Checkbox(onChanged: (value) {}, value: true),
         ),
         const SizedBox(width: AppSizes.spaceBtnItems),
-        Text.rich(
-          TextSpan(
+        RichText(
+          overflow: TextOverflow.ellipsis,
+          text: TextSpan(
             children: [
               TextSpan(
                 text: '${AppTexts.iAgreeTo} ',

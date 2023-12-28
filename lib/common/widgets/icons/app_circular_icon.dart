@@ -32,7 +32,7 @@ class AppCircularIcon extends StatelessWidget {
       ),
       child: IconButton(
         onPressed: onPressed,
-        icon: Icon(icon, color: color, size: size),
+        icon: Center(child: Icon(icon, color: color, size: size)),
       ),
     );
   }
