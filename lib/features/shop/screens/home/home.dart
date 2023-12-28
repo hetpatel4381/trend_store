@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:trend_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:trend_store/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:trend_store/common/widgets/layouts/grid_layout.dart';
+import 'package:trend_store/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:trend_store/common/widgets/text/section_heading.dart';
 import 'package:trend_store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:trend_store/features/shop/screens/home/widgets/home_categories.dart';
@@ -16,12 +18,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             /// Header
-            HomePrimaryHeaderContainer(
+            const HomePrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Custom AppBar
@@ -80,12 +82,24 @@ class HomeScreen extends StatelessWidget {
 
             /// Body
             Padding(
-              padding: EdgeInsets.all(AppSizes.defaultSpace),
-              child: AppPromoSlider(banners: [
-                AppImages.promoBanner1,
-                AppImages.promoBanner2,
-                AppImages.promoBanner3,
-              ]),
+              padding: const EdgeInsets.all(AppSizes.defaultSpace),
+              child: Column(
+                children: [
+                  // Promo Slilder
+                  const AppPromoSlider(banners: [
+                    AppImages.promoBanner1,
+                    AppImages.promoBanner2,
+                    AppImages.promoBanner3,
+                  ]),
+                  const SizedBox(height: AppSizes.spaceBtwSetions),
+
+                  // Popular Products
+                  AppGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const AppProductCardVertical(),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
